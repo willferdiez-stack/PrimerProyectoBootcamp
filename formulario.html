@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <title>Formulario de contacto</title>
+</head>
+
+<body>
+    <header>
+        <div class="titulo">
+            <h1>Patatec</h1>
+            <img class="icono" src="recursos/imagenes/Potato.png" alt="">
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="listaCursos.html">Nuestros cursos</a>
+                </li>
+                <li>
+                    <a href="formulario.html">Contacta con nosotros</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <form action="">
+        <fieldset>
+            <legend>Datos del alumno</legend>
+            <label for="nombre">Nombre</label>
+            <input type="text" placeholder="Escriba aquí su nombre"><br>
+            <label for="apellidos">Apellidos</label>
+            <input type="text" placeholder="Escriba aquí sus apellidos"><br>
+            <label for="dni">DNI/NIE</label>
+            <input type="text" placeholder="Escriba aquí su número de DNI/NIE"><br>
+            <label for="fecha">Fecha de nacimiento</label>
+            <input type="date"><br>
+            <label for="numero">Teléfono</label>
+            <input type="text" inputmode="numeric" maxlength="9" placeholder="Escriba aquí su número de teléfono"><br>
+            <label for="correo">Dirección de correo electrónico</label>
+            <input type="email" placeholder="Escriba aquí su dirección de correo"><br>
+        </fieldset>
+        <fieldset>
+            <legend>Detalles del curso</legend>
+            <label for="curso">Seleccione el curso deseado</label>
+            <select name="cur" id="">
+                <option value="">Escoja curso</option>
+                <option value="pro">Programación orientada a objetos</option>
+                <option value="web">Desarrollo de aplicaciones web</option>
+                <option value="dat">Data science y PowerBI</option>
+                <option value="mar">Marketing y publicidad</option>
+                <option value="dis">Diseño y dibujo técnico</option>
+            </select><br>
+            <label for="idioma">Idioma del curso</label>
+            <select name="leng" id="">
+                <option value="">Escoja idioma</option>
+                <option value="sp">Español</option>
+                <option value="ing">English</option>
+                <option value="eus">Euskara</option>
+            </select><br>
+            <label for="horario">Tipo de horario</label><br>
+            <input type="radio" id="mat" name="horario" value="MAT">
+            <label for="matutino">Matutino</label><br>
+            <input type="radio" id="ves" name="horario" value="VES">
+            <label for="vespertino">Vespertino</label><br>
+        </fieldset>
+    </form>
+    <button>Enviar</button>
+    <h2>Gracias por tu interés en los cursos de Patatec.</h2>
+    <p>Nos aseguraremos de contactar muy pronto contigo para hablar sobre tu elección y responder cualquier duda que
+        puedas tener</p>
+
+    <footer>
+        <nav>
+            <ul>
+                <li>Atxuri Kalea, 21, Bilbao</li>
+                <li>tef: 972184356</li>
+                <li>e-mail: Patatec@fritec.tec</li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>
